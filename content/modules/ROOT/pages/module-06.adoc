@@ -1,0 +1,24 @@
+= Section 7 - AI Driven Ansible for Network Automation
+
+== Objective
+
+This lab synthesizes the AI skills from the preceding sections into a practical network automation scenario. In this section, we will leverage AI to generate Ansible playbooks designed to troubleshoot OSPF routing issues. This approach allows network experts to codify their deep troubleshooting knowledge into automated, repeatable workflows. As a result, this process lowers the barrier to entry for new engineers and enables senior experts to validate and test automation playbooks more rapidly before production deployment. To simulate a realistic operational environment, this lab integrates Splunk and Event-Driven Ansible, creating a complete feedback loop to observe network events, decide on a course of action, and automatically act on OSPF-related issues
+
+The workflow used in this Lab is called the **Network-AIOps-Workflow**. This workflow will be triggered by Event-Driven Ansible (EDA) whenever an OSPF neighbor adjacency issue is detected by Splunk. Specifically, this demo is set up to respond to failed OSPF neighbors.
+
+This workflow leverages Ansible Lightspeed to generate a remediation playbook. The playbook is designed to automate the diagnostic steps a network engineer would typically perform manually to identify the root cause of an OSPF outage. As a critical safety measure, the generated playbook is first executed in check-mode. This provides a "dry run," allowing the engineer to review and validate the proposed actions without making any changes to the network. After a thorough review, the network engineer can approve the playbook for execution, running it again without check-mode to apply the necessary changes and resolve the issue.
+
+[quote]
+⚠️ Note, this workflow and associated project, inventories, gitea repository, job-templates were preloaded for this lab. However, you will be required to provide configurations to the Splunk, EDA, and the Cisco router to complete the exercises.
+
+image::network-aiops-workflow.png[Network AI Workflow]
+
+== Introducing AI with Ansible
+
+Red Hat AI is already deployed in this lab and powered by the **Granite LLM** model.
+
+These are available as part of your AAP subscription, giving your organization a quick and validated path to deploy generative AI models using automation.
+
+== Complete
+
+You have completed this module. Move forward to the next section to setup Splunk.
