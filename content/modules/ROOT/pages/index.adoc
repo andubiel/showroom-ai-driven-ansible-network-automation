@@ -66,6 +66,8 @@ For this workshop are there four (4) Parts:
 
 4. *Execute HTTPD Remedation* - This is the final Job Template that will actually fix the application outage on the RHEL webserver.
 
+5. *Optional:* *AI Driven Ansible for Network Automation* - This lab synthesizes the 🧠 AI skills from the preceding sections of the {lab_name} into a practical network automation scenario.
+
 [quote]
 💡 Could this all be one workflow? Yes.  This is purposely broken up at natural breakpoints where a human user can review what the AIOps workflow is doing and course correct if required.  This also allows organization to incrementally adopt AIOps workflows.  Organization can benefit greatly from any of these individual parts!
 
@@ -130,6 +132,12 @@ Password: `{ssh_password}`
 | http://service1.{subdomain_base}:{mattermost_port}[Mattermost,window=_blank]
 | Username: ansibleadmin@ansible.com
 Password: `{ssh_password}`
+
+| Splunk 
+| link:http://{target_host}:8000[Splunk,window=_blank]
+| Username: `{lab_username}`
+Password: `{ssh_password}`
+
 |===
 
 == What's Next?

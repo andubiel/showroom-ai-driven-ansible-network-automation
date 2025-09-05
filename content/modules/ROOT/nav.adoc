@@ -1,3 +1,7 @@
 * xref:module-00.adoc[1. Log Enrichment and Prompt Generation Workflow]
 * xref:module-01.adoc[2. Remediation Workflow]
 * xref:module-02.adoc[3. Summary and Call to Actions]
+* xref:module-06.adoc[7. AI Driven Ansible for Network Automation]
+* xref:module-07.adoc[8. Splunk]
+* xref:module-08.adoc[9. Event Driven Ansible]
+* xref:module-09.adoc[10. Network Workflow]
